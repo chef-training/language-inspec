@@ -1,4 +1,4 @@
 '.source.inspec':
   'Describe iptables':
     'prefix': 'iptables'
-    'body': "# http://inspec.io/docs/reference/resources/iptables/\ndescribe iptables('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"
+    'body': "# http://inspec.io/docs/reference/resources/iptables/\ndescribe iptables(rule: '${1:name}', table: '${2:name}', chain: '${3:name}') do\n  it { should${4:_not} have_rule('${5:RULE}') }${6}\nend"
