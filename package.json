@@ -15,6 +15,6 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "readme": "# Language - InSpec\n\nInspec snippet and grammar support"
-  "readmeFilename": "README.md",
+  "readme": "# Language - InSpec\n\nInspec snippet and grammar support",
+  "readmeFilename": "README.md"
 }
