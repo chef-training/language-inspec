@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Desscribe mount':
+    'prefix': 'mount'
+    'body': "# http://inspec.io/docs/reference/resources/mount/\ndescribe mount('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

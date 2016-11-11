@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Desscribe oneget':
+    'prefix': 'oneget'
+    'body': "# http://inspec.io/docs/reference/resources/oneget/\ndescribe oneget('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

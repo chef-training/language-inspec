@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Desscribe file':
+    'prefix': 'file'
+    'body': "# http://inspec.io/docs/reference/resources/file/\ndescribe file('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Desscribe postgres_session':
+    'prefix': 'postgres_session'
+    'body': "# http://inspec.io/docs/reference/resources/postgres_session/\ndescribe postgres_session('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

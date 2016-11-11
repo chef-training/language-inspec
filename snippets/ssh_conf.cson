@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Desscribe ssh_conf':
+    'prefix': 'ssh_conf'
+    'body': "# http://inspec.io/docs/reference/resources/ssh_conf/\ndescribe ssh_conf('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

@@ -1,0 +1,20 @@
+{
+  "name": "language-inspec",
+  "version": "0.1.1",
+  "description": "Inspec snippet and grammar support",
+  "keywords": [
+    "language",
+    "grammar",
+    "inspec",
+    "ruby",
+    "chef",
+    "compliance"
+  ],
+  "repository": "https://github.com/chef-training/language-inspec",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "readme": "# Language - InSpec\n\nInspec snippet and grammar support"
+  "readmeFilename": "README.md",
+}

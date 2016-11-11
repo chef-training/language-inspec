@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Desscribe grub_conf':
+    'prefix': 'grub_conf'
+    'body': "# http://inspec.io/docs/reference/resources/grub_conf/\ndescribe grub_conf('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

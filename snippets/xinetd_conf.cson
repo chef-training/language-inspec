@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Desscribe xinetd_conf':
+    'prefix': 'xinetd_conf'
+    'body': "# http://inspec.io/docs/reference/resources/xinetd_conf/\ndescribe xinetd_conf('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"
