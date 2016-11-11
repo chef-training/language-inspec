@@ -1,4 +1,4 @@
 '.source.inspec':
-  'Desscribe runit_service':
+  'Describe runit_service':
     'prefix': 'runit_service'
     'body': "# http://inspec.io/docs/reference/resources/runit_service/\ndescribe runit_service('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

@@ -1,4 +1,4 @@
 '.source.inspec':
-  'Desscribe etc_shadow':
+  'Describe etc_shadow':
     'prefix': 'etc_shadow'
     'body': "# http://inspec.io/docs/reference/resources/etc_shadow/\ndescribe etc_shadow('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

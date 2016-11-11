@@ -1,4 +1,4 @@
 '.source.inspec':
-  'Desscribe gem':
+  'Describe gem':
     'prefix': 'gem'
     'body': "# http://inspec.io/docs/reference/resources/gem/\ndescribe gem('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

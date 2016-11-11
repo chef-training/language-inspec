@@ -1,4 +1,4 @@
 '.source.inspec':
-  'Desscribe mysql_session':
+  'Describe mysql_session':
     'prefix': 'mysql_session'
     'body': "# http://inspec.io/docs/reference/resources/mysql_session/\ndescribe mysql_session('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

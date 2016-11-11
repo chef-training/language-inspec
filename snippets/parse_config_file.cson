@@ -1,4 +1,4 @@
 '.source.inspec':
-  'Desscribe parse_config_file':
+  'Describe parse_config_file':
     'prefix': 'parse_config_file'
     'body': "# http://inspec.io/docs/reference/resources/parse_config_file/\ndescribe parse_config_file('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

@@ -1,4 +1,4 @@
 '.source.inspec':
-  'Desscribe iis_site':
+  'Describe iis_site':
     'prefix': 'iis_site'
     'body': "# http://inspec.io/docs/reference/resources/iis_site/\ndescribe iis_site('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

@@ -1,4 +1,4 @@
 '.source.inspec':
-  'Desscribe login_def':
+  'Describe login_def':
     'prefix': 'login_def'
     'body': "# http://inspec.io/docs/reference/resources/login_def/\ndescribe login_def('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

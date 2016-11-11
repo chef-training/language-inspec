@@ -1,4 +1,4 @@
 '.source.inspec':
-  'Desscribe vbscript':
+  'Describe vbscript':
     'prefix': 'vbscript'
     'body': "# http://inspec.io/docs/reference/resources/vbscript/\ndescribe vbscript('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

@@ -1,4 +1,4 @@
 '.source.inspec':
-  'Desscribe process':
+  'Describe process':
     'prefix': 'process'
     'body': "# http://inspec.io/docs/reference/resources/process/\ndescribe process('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

@@ -1,4 +1,4 @@
 '.source.inspec':
-  'Desscribe kernel_parameter':
+  'Describe kernel_parameter':
     'prefix': 'kernel_parameter'
     'body': "# http://inspec.io/docs/reference/resources/kernel_parameter/\ndescribe kernel_parameter('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

@@ -1,4 +1,4 @@
 '.source.inspec':
-  'Desscribe mysql_conf':
+  'Describe mysql_conf':
     'prefix': 'mysql_conf'
     'body': "# http://inspec.io/docs/reference/resources/mysql_conf/\ndescribe mysql_conf('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

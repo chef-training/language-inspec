@@ -1,4 +1,4 @@
 '.source.inspec':
-  'Desscribe ini':
+  'Describe ini':
     'prefix': 'ini'
     'body': "# http://inspec.io/docs/reference/resources/ini/\ndescribe ini('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

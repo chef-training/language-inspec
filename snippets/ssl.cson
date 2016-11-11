@@ -1,4 +1,4 @@
 '.source.inspec':
-  'Desscribe ssl':
+  'Describe ssl':
     'prefix': 'ssl'
     'body': "# http://inspec.io/docs/reference/resources/ssl/\ndescribe ssl('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

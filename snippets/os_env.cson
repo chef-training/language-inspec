@@ -1,4 +1,4 @@
 '.source.inspec':
-  'Desscribe os_env':
+  'Describe os_env':
     'prefix': 'os_env'
     'body': "# http://inspec.io/docs/reference/resources/os_env/\ndescribe os_env('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"
