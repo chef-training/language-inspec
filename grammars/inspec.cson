@@ -11,4 +11,8 @@
     'match': '(?<!\\.)\\b(control|describe|it|its|impact|title|desc)\\b'
     'name': 'keyword.inspec'
   }
+  {
+    'match': '(?<!\\.)\\b(do|end)\\b'
+    'name': 'keyword.ruby'
+  }
 ]
