@@ -1,4 +1,4 @@
 '.source.inspec':
   'Describe os':
     'prefix': 'os'
-    'body': "# http://inspec.io/docs/reference/resources/os/\ndescribe os('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"
+    'body': "# http://inspec.io/docs/reference/resources/os/\ndescribe os[:family] do\n  it { should${1:_not} eq '${2:platform}' }${3}\nend"
