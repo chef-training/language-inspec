@@ -1,4 +1,4 @@
 '.source.inspec':
   'Describe powershell':
     'prefix': 'powershell'
-    'body': "# http://inspec.io/docs/reference/resources/powershell/\ndescribe powershell('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"
+    'body': "# http://inspec.io/docs/reference/resources/powershell/\ndescribe powershell(\"${1:script}\") do\n  its('stdout') { should${2:_not} eq '${2:value}' }\n  its('stderr') { should{3:_not} eq '${4:value}' }${5}\nend"
