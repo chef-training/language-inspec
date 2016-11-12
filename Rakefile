@@ -1,4 +1,5 @@
 require 'erb'
+require 'highline/import'
 
 task :default => :install
 
@@ -21,6 +22,12 @@ namespace :snippets do
         @resource = resource
         # File.write("snippets/#{resource}.cson",template.result(binding))
       end
+    end
+
+    task :commit do
+      name = ask "resource to commit?"
+      puts `git add snippets/#{name}.cson`
+      puts `git commit -m "Updating #{name} resource snippet"`
     end
 
     task :remove do
