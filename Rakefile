@@ -24,6 +24,7 @@ namespace :snippets do
       end
     end
 
+    desc "Helps with creating commits for each snippets. Asks for the snippet name"
     task :commit do
       name = ask "resource to commit?"
       puts `git add snippets/#{name}.cson`
