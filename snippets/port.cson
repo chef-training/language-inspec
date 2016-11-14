@@ -1,4 +1,4 @@
 '.source.inspec':
   'Describe port':
     'prefix': 'port'
-    'body': "# http://inspec.io/docs/reference/resources/port/\ndescribe port(${1:number}) do\n  it { should${2:_not} be_listening }\n  its('protocols') { should{3:_not} include('${4:protocol}') }${5}\nend"
+    'body': "# http://inspec.io/docs/reference/resources/port/\ndescribe port(${1:number}) do\n  it { should${2:_not} be_listening }\n  its('protocols') { should${3:_not} include('${4:protocol}') }${5}\nend"
