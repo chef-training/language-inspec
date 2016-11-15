@@ -12,6 +12,10 @@
     'name': 'keyword.inspec'
   }
   {
+    'match': '(^|;)\\W*(its)\\b'
+    'name': 'keyword.inspec'
+  }
+  {
     'include': 'source.ruby.rspec'
   }
 ]
