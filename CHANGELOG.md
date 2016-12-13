@@ -1,3 +1,11 @@
+## 1.0.1 - Added Resource
+
+* Added the windows_task snippet 
+
+## 1.0.0 - Published Release
+
+* Aligned CHANAGELOG to match package version
+
 ## 0.5.1 - port snippet fix
 
 * Fixed an issue with the port snippet missing a tab stop
