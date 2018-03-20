@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe http':
+    'prefix': 'http'
+    'body': "# https://inspec.io/docs/reference/resources/http/\ndescribe http('${1:url}', ${2:method: 'POST'}) do\n  its('${3:status}') { should${4:_not} ${5:eq} ${6:value} }${7}\nend"

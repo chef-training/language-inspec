@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe key_rsa':
+    'prefix': 'key_rsa'
+    'body': "# https://inspec.io/docs/reference/resources/key_rsa/\ndescribe key_rsa('${1:key_path}') do\n  it { should${2:_not} ${3:be_public} }${4}\nend"

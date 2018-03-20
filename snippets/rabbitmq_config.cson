@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe rabbitmq_config':
+    'prefix': 'rabbitmq_config'
+    'body': "# https://inspec.io/docs/reference/resources/rabbitmq_config/\ndescribe rabbitmq_config.params('${1:param_prefix}', '${2:param_name}') do\n  it { should${3:_not} ${4:cmp} ${5:expected} }${6}\nend"

@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe docker':
+    'prefix': 'docker'
+    'body': "# https://inspec.io/docs/reference/resources/docker/\ndescribe docker.containers do\n  its('${1:images}') { should${2:_not} ${3:include} ${4:'image_name'} }${5}\nend"

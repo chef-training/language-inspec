@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe mssql_session':
+    'prefix': 'mssql_session'
+    'body': "# https://inspec.io/docs/reference/resources/mssql_session/\ndescribe mssql_session(user: '${1:username}', password: '${2:password}').query('${3:query}').row(0).result('${4:result}') do\n  its('${5:value}') { should${6:_not} ${7:eq} ${8:'expected'} }${9}\nend"

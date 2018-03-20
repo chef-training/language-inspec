@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe passwd':
+    'prefix': 'passwd'
+    'body': "# https://inspec.io/docs/reference/resources/passwd/\ndescribe passwd do\n  its('${2:users}') { should${3:_not} ${4:include} ${5:'expected'} }${6}\nend"

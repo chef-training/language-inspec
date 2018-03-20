@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe zfs_pool':
+    'prefix': 'zfs_pool'
+    'body': "# https://inspec.io/docs/reference/resources/zfs_pool/\ndescribe zfs_pool('${1:pool}') do\n  its('${2:property}') { should${3:_not} ${4:cmp} ${5:'expected'} }${6}\nend"

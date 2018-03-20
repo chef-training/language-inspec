@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe etc_fstab':
+    'prefix': 'etc_fstab'
+    'body': "# https://inspec.io/docs/reference/resources/etc_fstab/\ndescribe etc_fstab.where { device_name == '${1:name}' } do\n  its('${2:property}') { should${3:_not} ${4:cmp} ${5:'expected'} }${6}\nend"

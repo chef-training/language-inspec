@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe aws_iam_policies':
+    'prefix': 'aws_iam_policies'
+    'body': "# https://inspec.io/docs/reference/resources/aws_iam_policies/\ndescribe aws_iam_policies do\n  its('${1:property}') { should${2:_not} ${3:include}('${4:expected}') }${5}\nend"

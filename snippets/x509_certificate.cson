@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe x509_certificate':
+    'prefix': 'x509_certificate'
+    'body': "# https://inspec.io/docs/reference/resources/x509_certificate/\ndescribe x509_certificate('${1:path_to_cert}') do\n  its('${2:property}') { should${3:_not} ${4:cmp} ${5:'expected'} }${4}\nend"

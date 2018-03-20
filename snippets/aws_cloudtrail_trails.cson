@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe aws_cloudtrail_trails':
+    'prefix': 'aws_cloudtrail_trails'
+    'body': "# https://inspec.io/docs/reference/resources/aws_cloudtrail_trails/\ndescribe aws_cloudtrail_trails do\n  its('{2:property}') { should${3:_not} ${4:exist} }${5}\nend"

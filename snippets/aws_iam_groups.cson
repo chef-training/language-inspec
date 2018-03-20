@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe aws_iam_groups':
+    'prefix': 'aws_iam_groups'
+    'body': "# https://inspec.io/docs/reference/resources/aws_iam_groups/\ndescribe aws_iam_groups do\n  it { should${1:_not} ${2:exist} }${3}\nend"

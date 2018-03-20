@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe login_defs':
+    'prefix': 'login_defs'
+    'body': "# https://inspec.io/docs/reference/resources/login_defs/\ndescribe login_defs do\n  its('${1:property}') { should${2:_not} ${3:cmp} ${4:'expected'} }${5}\nend"

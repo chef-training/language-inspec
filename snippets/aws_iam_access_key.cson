@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe aws_iam_access_key':
+    'prefix': 'aws_iam_access_key'
+    'body': "# https://inspec.io/docs/reference/resources/aws_iam_access_key/\ndescribe aws_iam_access_key(access_key_id: '${1:key_id}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

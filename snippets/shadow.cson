@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe shadow':
+    'prefix': 'shadow'
+    'body': "# https://inspec.io/docs/reference/resources/shadow/\ndescribe shadow do\n  its('${1:property}') { should${2:_not} ${3:cmp} ${4:'expected'} }${5}\nend"

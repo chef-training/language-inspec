@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe etc_hosts':
+    'prefix': 'etc_hosts'
+    'body': "# https://inspec.io/docs/reference/resources/etc_hosts/\ndescribe etc_hosts.where { ip_address == '${1:address}' } do\n  its('${2:property}') { should${3:_not} ${4:cmp} ${5:'expected'} }${6}\nend"

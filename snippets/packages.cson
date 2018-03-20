@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe packages':
+    'prefix': 'packages'
+    'body': "# https://inspec.io/docs/reference/resources/packages/\ndescribe packages(/${1:name}/) do\n  its('${2:property}') { should${3:_not} ${4:cmp} ${5:'expected'} }${6}\nend"

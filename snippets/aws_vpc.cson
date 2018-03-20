@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe aws_vpc':
+    'prefix': 'aws_vpc'
+    'body': "# https://inspec.io/docs/reference/resources/aws_vpc/\ndescribe aws_vpc('${1:vpc_id_or_delete_this_for_default_vpc}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

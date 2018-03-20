@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe oracledb_session':
+    'prefix': 'oracledb_session'
+    'body': "# https://inspec.io/docs/reference/resources/oracledb_session/\ndescribe oracledb_session(user: '${1:username}', password: '${2:password}', service: ${3:service}).query('${4:query}').row(0).column('${5:result}') do\n  its('${6:value}') { should${7:_not} ${8:cmp} ${9:'expected'} }${10}\nend"

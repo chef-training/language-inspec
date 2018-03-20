@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe aide_conf':
+    'prefix': 'aide_conf'
+    'body': "# https://inspec.io/docs/reference/resources/aide_conf/\ndescribe aide_conf('${1:path}') do\n  its('${2:property}') { should${3:_not} ${4:cmp} ${5:'expected'} }${6}\nend"

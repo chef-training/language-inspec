@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe auditd':
+    'prefix': 'auditd'
+    'body': "# https://inspec.io/docs/reference/resources/auditd/\ndescribe auditd do\n  it { should${2:_not} ${3:include} ${4:expected} }${5}\nend"

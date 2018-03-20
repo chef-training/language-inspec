@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe azure_resource_group':
+    'prefix': 'azure_resource_group'
+    'body': "# https://inspec.io/docs/reference/resources/azure_resource_group/\ndescribe azure_resource_group(name: '${1:name}') do\n  its('${2:property}') { should${3:_not} ${4:cmp} ${5:'expected'} }${6}\nend"

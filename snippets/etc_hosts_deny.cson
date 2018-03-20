@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe etc_hosts_deny':
+    'prefix': 'etc_hosts_deny'
+    'body': "# https://inspec.io/docs/reference/resources/etc_hosts_deny/\ndescribe etc_hosts_deny.where { daemon == '${1:value}' } do\n  its('${2:property}') { should${3:_not} ${4:cmp} ${5:'expected'} }${6}\nend"

@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe xml':
+    'prefix': 'xml'
+    'body': "# https://inspec.io/docs/reference/resources/xml/\ndescribe xml('${1:path_to_xml}') do\n  its('${2:property}') { should${3:_not} ${4:cmp} ${5:'expected'} }${6}\nend"

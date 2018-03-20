@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe postgres_ident_conf':
+    'prefix': 'postgres_ident_conf'
+    'body': "# https://inspec.io/docs/reference/resources/postgres_ident_conf/\ndescribe postgres_ident_conf.where { pg_username == '${1:name}' } do\n  its('${2:property}') { should${3:_not} ${4:cmp} ${5:'expected'} }${6}\nend"

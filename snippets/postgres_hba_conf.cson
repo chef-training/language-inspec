@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe postgres_hba_conf':
+    'prefix': 'postgres_hba_conf'
+    'body': "# https://inspec.io/docs/reference/resources/postgres_hba_conf/\ndescribe postgres_hba_conf.where { type == '${1:type}' } do\n  its('${2:property}') { should${3:_not} ${4:cmp} ${5:'expected'} }${6}\nend"

@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe nginx_conf':
+    'prefix': 'nginx_conf'
+    'body': "# https://inspec.io/docs/reference/resources/nginx_conf/\ndescribe nginx_conf.params['${1:name}'] do\n  it { should${2:_not} ${3:cmp} ${4:'expected'} }${5}\nend"

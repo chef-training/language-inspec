@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe cran':
+    'prefix': 'cran'
+    'body': "# https://inspec.io/docs/reference/resources/cran/\ndescribe cran('${1:package_name}') do\n  it { should${2:_not} ${3:be_installed} }${4}\nend"

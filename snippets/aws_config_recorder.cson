@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe aws_config_recorder':
+    'prefix': 'aws_config_recorder'
+    'body': "# https://inspec.io/docs/reference/resources/aws_config_recorder/\ndescribe aws_config_recorder('${1:recorder}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

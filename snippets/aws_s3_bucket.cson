@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe aws_s3_bucket':
+    'prefix': 'aws_s3_bucket'
+    'body': "# https://inspec.io/docs/reference/resources/aws_s3_bucket/\ndescribe aws_s3_bucket(bucket_name: '${1:name}') do\n  it { should${2:_not} ${3:exist}\n  it { should_not be_public } }${4}\nend"

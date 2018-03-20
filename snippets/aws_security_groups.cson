@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe aws_security_groups':
+    'prefix': 'aws_security_groups'
+    'body': "# https://inspec.io/docs/reference/resources/aws_security_groups/\ndescribe aws_security_groups do\n  its('${1:property}') { should${2:_not} ${3:cmp} ${4:expected} }${5}\nend"

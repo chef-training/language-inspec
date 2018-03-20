@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe docker_service':
+    'prefix': 'docker_service'
+    'body': "# https://inspec.io/docs/reference/resources/docker_service/\ndescribe docker_service('${1:name}') do\n  it { should${2:_not} ${3:exist} }${4}\nend"

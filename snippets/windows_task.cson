@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe windows_task':
+    'prefix': 'windows_task'
+    'body': "# https://inspec.io/docs/reference/resources/windows_task/\ndescribe windows_task('${1:name uri}') do\n  it { should be_enabled }\n  its('${2:property}') { should${3:_not} ${4:cmp} ${5:'expected'} }${6}\nend"

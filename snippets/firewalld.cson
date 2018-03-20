@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe firewalld':
+    'prefix': 'firewalld'
+    'body': "# https://inspec.io/docs/reference/resources/firewalld/\ndescribe firewalld do\n  it { should${2:_not} ${3:be_running} }${4}\nend"

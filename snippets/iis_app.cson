@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe iis_app':
+    'prefix': 'iis_app'
+    'body': "# https://inspec.io/docs/reference/resources/iis_app/\ndescribe iis_app('${1:application_path}', '${2:site_name}') do\n  it { should${3:_not} ${4:exist} }${5}\nend"

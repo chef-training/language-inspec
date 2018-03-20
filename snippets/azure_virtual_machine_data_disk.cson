@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe azure_virtual_machine_data_disk':
+    'prefix': 'azure_virtual_machine_data_disk'
+    'body': "# https://inspec.io/docs/reference/resources/azure_virtual_machine_data_disk/\ndescribe azure_virtual_machine_data_disk(group_name: '${1:group_name}', name: '${2:name}') do\n  its('${3:property}') { should${4:_not} ${5:cmp} ${6:'expected'} }${7}\nend"

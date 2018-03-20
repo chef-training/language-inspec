@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe dh_params':
+    'prefix': 'dh_params'
+    'body': "# https://inspec.io/docs/reference/resources/dh_params/\ndescribe dh_params('${1:path}') do\n  it { should${2:_not} ${3:be_valid} }${4}\nend"

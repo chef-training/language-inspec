@@ -1,4 +1,7 @@
 '.source.inspec':
   'Describe ssh_config':
     'prefix': 'ssh_config'
-    'body': "# http://inspec.io/docs/reference/resources/ssh_config/\ndescribe ssh_config do\n  its('${1:setting}') { should${2:_not} eq '${3:value}' }${4}\nend"
+    'body': "# https://inspec.io/docs/reference/resources/ssh_config/\ndescribe ssh_config do\n  its('${1:setting}') { should${2:_not} eq '${3:value}' }${4}\nend"
+  'Describe sshcon':
+    'prefix': 'sshcon'
+    'body': "# https://inspec.io/docs/reference/resources/ssh_config/\ndescribe ssh_config do\n  its('${1:setting}') { should${2:_not} eq '${3:value}' }${4}\nend"

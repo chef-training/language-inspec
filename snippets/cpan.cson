@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe cpan':
+    'prefix': 'cpan'
+    'body': "# https://inspec.io/docs/reference/resources/cpan/\ndescribe cpan('${1:package_name}') do\n  it { should${2:_not} ${3:be_installed} }${4}\nend"

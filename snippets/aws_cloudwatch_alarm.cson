@@ -1,0 +1,4 @@
+'.source.inspec':
+  'Describe aws_cloudwatch_alarm':
+    'prefix': 'aws_cloudwatch_alarm'
+    'body': "# https://inspec.io/docs/reference/resources/aws_cloudwatch_alarm/\ndescribe aws_cloudwatch_alarm(metric: '${1:metric_name}', metric_namespace: '${2:metric_namespace}') do\n  it { should${3:_not} ${4:exist} }${5}\nend"

@@ -1,4 +1,4 @@
 '.source.inspec':
   'Describe inetd_conf':
     'prefix': 'inetd_conf'
-    'body': "# http://inspec.io/docs/reference/resources/inetd_conf/\ndescribe inetd_conf do\n  its('${1:protocol}') { should${2:_not} eq ${3:value} }${4}\nend"
+    'body': "# https://inspec.io/docs/reference/resources/inetd_conf/\ndescribe inetd_conf do\n  its('${1:protocol}') { should${2:_not} eq ${3:value} }${4}\nend"
